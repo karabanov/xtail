@@ -1,12 +1,12 @@
 #!/bin/sh
-/usr/bin/tail -F ./radius.log |
+/usr/bin/tail -f ./radius.log |
 while read line
 do
 
-  echo $line | grep -w 'pskov-nas' | sed \
-  "s/accept/`echo -e \\\033[032maccept\\\033[0m`/;
+  echo $line | sed "/pskov-nas/!d;
+  s/accept/`echo -e \\\033[032maccept\\\033[0m`/;
   s/reject/`echo -e \\\033[031mreject\\\033[0m`/;
-  s/[ ]test[.]+/`echo -e \\\033[031mtest\\\033[0m`/"
+  s/[ ]testvpn/`echo -e \\\033[035mtestvpn\\\033[0m`/"
 
 done
 
