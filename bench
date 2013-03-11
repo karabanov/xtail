@@ -1,0 +1,28 @@
+while true
+do
+  echo '00:00 213-02-06 pskov-nas vlan401 accept zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas2 vlan401 reject zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas3	 vlan401 	reject	 testvpnnikita 	00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas4 vlan401	 accept	 testvpnnikita	 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401	 accept testvpnalek 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401 accept	 testvpnalex 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas3       vlan401        reject   testvpnnikita  00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas4 vlan401       accept  testvpnnikita   00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401        accept testvpnalek 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401 accept         testvpnalex 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401 accept	 testvpn2	 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas vlan401 accept	 zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas2 vlan401 	reject zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas3 vlan401 	reject testvpnnikita 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas4 vlan401 accept testvpnnikita 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas	 vlan401 accept testvpnalex 	00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas	 vlan401 accept testvpn2 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 	pskov-nas vlan401 accept 	zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 	pskov-nas2 vlan401 reject	 zend72 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas3	 vlan401 	reject testvpnnikita 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas4 vlan401 accept testvpnnikita	 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06 pskov-nas 	vlan401 	accept testvpnalek	 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06	 pskov-nas vlan401 accept	 testvpnalex 00:00:00:00:00:00' >> radius.log
+  echo '00:00 213-02-06	 pskov-nas vlan401 accept	 testvpn2 00:00:00:00:00:00' >> radius.log
+  sleep 1
+done
